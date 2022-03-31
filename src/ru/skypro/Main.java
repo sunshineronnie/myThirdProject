@@ -41,25 +41,17 @@ public class Main {
 
 
 
-
-
-
-
-        int year = 2000;
-        switch (year) {
-            case 2024:
-            case 2020:
-            case 2016:
-            case 2012:
-            case 2008:
-            case 2004:
-            case 2000:
-            case 1996:
-                System.out.println("1 год является високосным");
-                break;
-            default:
-                System.out.println("2 год не является високосным");
+        int year = 1960;
+        if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
+            System.out.println( year + " 1 год является високосным");
+        } else {
+            System.out.println( year + " 2 год не является високосным");
         }
+
+
+
+
+
 
 
         int deliveryDistance = 95;
@@ -98,6 +90,8 @@ public class Main {
                 System.out.println("Такого месяца нет");
 
         }
+
+
 
 
 

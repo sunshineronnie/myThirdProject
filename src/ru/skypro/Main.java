@@ -43,6 +43,8 @@ public class Main {
 
 
 
+
+
         int year = 2000;
         switch (year) {
             case 2024:
@@ -61,11 +63,11 @@ public class Main {
 
 
         int deliveryDistance = 95;
-        if (deliveryDistance < 20) {
+        if (deliveryDistance <= 20) {
             System.out.println("Потребуется дней: 1 ");
-        } else if ( deliveryDistance > 20 && deliveryDistance < 60) {
+        } else if ( deliveryDistance > 20 && deliveryDistance <= 60) {
             System.out.println("Потребуется дней: 2");
-        } else if (deliveryDistance > 60 && deliveryDistance < 100 ) {
+        } else if (deliveryDistance > 60 && deliveryDistance <=100 ) {
             System.out.println("Потребуется дней: 3");
         }
 
